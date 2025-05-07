@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html, body{
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(213, 213, 213);
+}
+
+.container{
+    background: linear-gradient(-45deg,  #cbea06,#1b67e2, #842d8c, #b11d87, #1b67e2, #cbea06);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+@keyframes gradientShift{
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+  
+.label {
+    font-size: 48px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    padding-bottom: 60px;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+h1{
+    font-size: 70px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 60px;
+    letter-spacing: 8px;
+  }
+
+@media (max-width: 600px) {
+    .main-container{
+        max-width: 600px;
+        padding: 10px;
+    }
+
+    .label{
+        font-size: 35px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+}
